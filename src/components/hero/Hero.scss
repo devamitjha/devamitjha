@@ -32,6 +32,7 @@
                 @extend .subtitle_sm;
                 color:$white;
                 cursor:pointer;
+                text-decoration: none;
                 span{
                     text-transform: lowercase;
                 }
@@ -91,6 +92,10 @@
                         cursor: pointer;
                         +li{
                             margin-left:50px;
+                        }
+                        a{
+                            text-decoration: none;
+                            color: inherit;
                         }
                     }
                 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import './Hero.scss';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -21,17 +22,17 @@ const Hero = () => {
             </div>
             <div className="social right">
                 <ul>
-                    <li><a className="link">Git</a></li>
-                    <li><a className="link">Instagram</a></li>
-                    <li><a className="link">Facebook</a></li>
-                    <li><a className="link">Linkedin</a></li>
-                    <li><a className="link">Youtube</a></li>
+                    <li><Link className="link" to="https://github.com/devamitjha?tab=repositories" target="_blank">Git</Link></li>
+                    <li><Link className="link" to="https://www.instagram.com/devamitjha/" target="_blank">Instagram</Link></li>
+                    <li><Link className="link" to="https://www.facebook.com/devamitjha" target="_blank">Facebook</Link></li>
+                    <li><Link className="link" to="https://in.linkedin.com/in/devamitjha" target="_blank">Linkedin</Link></li>
+                    <li><Link className="link" to="https://www.youtube.com/c/devamitjha" target="_blank">Youtube</Link></li>
                 </ul>
             </div>  
         </div>
         <div className="link_bottom">
-            <a className="link">E: <span>techamitjha@gmail.com</span></a>
-            <a className="link">T: +91 9967175225</a>
+            <Link className="link" to="mailto:techamitjha@gmail.com">E: <span>techamitjha@gmail.com</span></Link>
+            <Link className="link" to="tel:+91 9967175225">T: +91 9967175225</Link>
         </div> 
     </div>
 </section>

@@ -8,7 +8,7 @@ const Header = () => {
         <header className="header">
             <section className="section_container">
                 <div className="section_wrapper jcsb">
-                    <div className="logo">Dev<span>A</span>mit</div>                
+                    <Link className="logo" to="/">Dev<span>A</span>mit</Link>                
                     <div className="menu right">
                         <span></span>
                         <span></span> 
