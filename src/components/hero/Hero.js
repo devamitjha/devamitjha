@@ -1,6 +1,7 @@
 import React from 'react';
 import './Hero.scss';
 import { Link } from 'react-router-dom';
+import { Link as SmoothScroll } from 'react-scroll';
 
 const Hero = () => {
   return (
@@ -11,7 +12,16 @@ const Hero = () => {
         <div className="section_row">
             <div className="content_section">
                 <div className="heading_container">
-                    <h3 className="heading_secondary">My Portfolio</h3>
+                    <SmoothScroll 
+                        className="smoothScroll"
+                        to="project"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >
+                        <h3 className="heading_secondary">My Portfolio</h3>
+                    </SmoothScroll>
                     <h2 className="heading_primary">
                         <span>Crafting Digital Solutions Tailored to Your Vision</span>
                     </h2>

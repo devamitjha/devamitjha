@@ -83,6 +83,10 @@
                 @media(max-width:820px){
                     max-width:95%;
                 } 
+                .smoothScroll{
+                    display:inline-block;
+                    cursor:pointer;
+                }
                 h2{
                     @extend .heading_1;
                     font-size:70px;
