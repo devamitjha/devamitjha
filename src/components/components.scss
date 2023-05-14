@@ -21,7 +21,7 @@ $accent:#b1b1b3;
     font-weight:700;
     font-size:80px;
     letter-spacing: -3.2px;
-    @media(max-width:768px){
+    @media(max-width:1180px){
         font-size:44px;
     }
 }
@@ -30,7 +30,7 @@ $accent:#b1b1b3;
     font-weight:700;
     font-size:45px;
     letter-spacing: -1.8px;
-    @media(max-width:768px){
+    @media(max-width:1180px){
         font-size:30px;
     }
 }
@@ -39,7 +39,7 @@ $accent:#b1b1b3;
     font-weight:700;
     font-size:35px;
     letter-spacing: -1.4px;
-    @media(max-width:768px){
+    @media(max-width:1180px){
         font-size:27px;
     }
 }
@@ -48,7 +48,7 @@ $accent:#b1b1b3;
     font-weight:700;
     font-size:25px;
     letter-spacing: -.75px;
-    @media(max-width:768px){
+    @media(max-width:1180px){
         font-size:18px;
     }
 }
@@ -57,7 +57,7 @@ $accent:#b1b1b3;
     font-size: 20px;
     font-weight: 700;
     letter-spacing: -.6px;
-    @media(max-width:768px){
+    @media(max-width:1180px){
         font-size:18px;
     }
 }
@@ -68,7 +68,7 @@ $accent:#b1b1b3;
     letter-spacing: 3.75px;
     color:#FFFFFF99;
     font-family: $incon;
-    @media(max-width:768px){
+    @media(max-width:1180px){
         font-size:13px;
     }
 }
@@ -78,7 +78,7 @@ $accent:#b1b1b3;
     text-transform: capitalize;
     font-style: normal;
     letter-spacing: -.48px;
-    @media(max-width:768px){
+    @media(max-width:1180px){
         font-size:14px;
     }
 }
@@ -88,7 +88,7 @@ $accent:#b1b1b3;
     font-weight: 400;
     letter-spacing: -.48px;
     line-height: 1.5;
-    @media(max-width:768px){
+    @media(max-width:1280px){
         font-size:14px;
     }
 }

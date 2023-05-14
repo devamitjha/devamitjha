@@ -15,6 +15,9 @@ section{
 }
 .section_container{    
     padding: 0 35px;
+    @media(max-width:820px){
+        padding:0 20px; 
+    } 
 }
 .section_wrapper{
     @extend .d_flex;

@@ -11,7 +11,7 @@ const About = () => {
                 <h3>ABOUT ME</h3>
             </div>
             <div className="section_info">
-                <h2>Design-Driven Development: Creating Engaging Digital Experiences</h2>
+                <h2>Design-Driven Development:<br/>Creating Engaging Digital Experiences</h2>
             </div>
         </div>
         <div className="section_right">
