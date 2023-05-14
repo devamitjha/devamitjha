@@ -1,0 +1,51 @@
+@import '../components.scss';
+.skill{
+    padding:170px 35px;
+    position: relative;
+    .section_wrapper{
+        justify-content: space-between;
+        .section_left,
+        .section_right{
+            width:50%;
+        }
+        .section_left{
+            padding:0 50px 0 10%; 
+            position:relative;
+            .section_title{
+                position:absolute;
+                top: 45%;
+                left: 0;
+                transform: translate(-50%) rotate(-90deg);
+               h3{
+                @extend .subtitle;
+               }
+            }
+            .section_info{
+                width:60%;
+                ul{
+                    list-style: none;
+                    padding-left:30%;
+                    li{
+                        cursor:pointer;
+                        @extend .body_text;
+                        color:#FFFFFF99;
+                        +li{
+                            margin-top:8px;
+                        }
+                    }
+                }
+            }
+        }
+        .section_right{
+            h3{
+                @extend .heading_4;
+                margin-bottom:25px;
+                line-height: 1.5;
+            }
+            p{
+                @extend .body_text;
+                color:#FFFFFF99;
+            }
+        }
+    }
+}

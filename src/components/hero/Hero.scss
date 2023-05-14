@@ -1,0 +1,108 @@
+@import '../components.scss';
+.hero{
+    background-color:$primary_color;
+    padding:0 35px; 
+    width:auto;    
+    margin:0 auto;  
+    position: relative;   
+    .section_container{
+        max-width:1600px;
+        position:relative; 
+        height:100vh;
+        margin:0 auto;
+        .box{
+            width:680px;
+            height:680px;
+            background-color: transparent;
+            background-image: linear-gradient(220deg,#4B6DCB70 0%,#FFFFFF00 100%);
+            border-radius: 100%;
+            position: absolute;
+            left:50%;
+            top:50%;
+            transform:translate(-50%, -50%);
+          }
+          .link_bottom{
+            @extend .d_flex;
+            justify-content: flex-start;
+            align-items: center;
+            position: absolute;
+            bottom: 50px;
+            left: 0px;
+            a{
+                @extend .subtitle_sm;
+                color:$white;
+                cursor:pointer;
+                span{
+                    text-transform: lowercase;
+                }
+                +a{
+                    margin-left:300px;
+                }
+
+            }
+          }
+    }
+    
+    .section_row{
+        @extend .d_flex;
+        width: auto;
+        min-width: 100%;
+        flex-direction: column;
+        position:relative;
+        align-items: flex-start; 
+        padding-left:16vw;
+        padding-top:18vw;         
+          .content_section{
+            display:block;
+            width: 100%;           
+            .heading_container{
+                max-width:580px;
+                h2{
+                    @extend .heading_1;
+                    font-size:70px;
+                    color:$white;
+                }
+                h3{
+                    color:$white;
+                    @extend .subtitle_sm;
+                    margin-bottom:30px;
+                    color:#FFFFFF99;
+                }
+              }
+          }
+          .bio,
+          .social{
+            position:absolute;
+            &.left{
+                top: 290px;
+                left: -190px;
+                transform: rotate(-90deg);
+            }
+            &.right{
+                top: 350px;
+                right: -260px;
+                transform: rotate(-90deg);
+                ul{
+                    list-style: none;
+                    @extend .d_flex;
+                    color:$white;
+                    li{
+                        @extend .subtitle_sm;
+                        cursor: pointer;
+                        +li{
+                            margin-left:50px;
+                        }
+                    }
+                }
+            }
+            .heading_secondary{
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: 3.5px;
+                font-family:$incon;
+                color:$white;
+            }
+          }
+          
+    }
+}

@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+} 
+@import './components/components.scss';
+#personal_page{
+    position:relative;
+    z-index:1;
+    background-color:$white;
+}
+section{
+    display:block;
+    width:100%;
+}
+.section_container{    
+    padding: 0 35px;
+}
+.section_wrapper{
+    @extend .d_flex;
+    width:auto;
+    max-width:1600px;
+    margin:0 auto;
+}
+.section_row{
+    display:flex;
+    width: auto;
+    min-width: 100%;
+}
+.dark{
+    background-color:$black;
+    color:$white;
+}
+
+.bg{
+    background-image: url(./images/bg.png);
+    background-position: center center;
+    background-size: cover;
+    opacity:.5;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+}
+.relatve_container{
+    position: relative;
+    z-index: 2;
+}

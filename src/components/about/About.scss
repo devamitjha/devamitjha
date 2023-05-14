@@ -1,0 +1,46 @@
+@import '../components.scss';
+.about{
+    padding:170px 35px;
+    position: relative;
+    .section_wrapper{
+        justify-content: space-between;
+        .section_left,
+        .section_right{
+            width:48%;
+        }
+        .section_left{
+            padding:0 50px 0 10%; 
+            position:relative;
+            .section_title{
+                position:absolute;
+                top: 45%;
+                left: 0;
+                transform: translate(-50%) rotate(-90deg);
+               h3{
+                @extend .subtitle;
+               }
+            }
+            .section_info{
+                //width:60%;
+                h2{
+                    @extend .heading_2;
+                }
+            }
+        }
+        .section_right{
+           .section_info{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding-left:20%;
+            p{
+                @extend .body_text;
+                color:#FFFFFF99;
+                +p{
+                    margin-top:20px;
+                }
+            }
+           } 
+        }
+    }
+}
