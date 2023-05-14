@@ -45,6 +45,9 @@
                     @media(max-width:1600px){
                         font-size:2vw;
                     }
+                    @media(max-width:820px){
+                        font-size:20px;
+                    }
                 }
                 p{
                     @extend .body_text;
