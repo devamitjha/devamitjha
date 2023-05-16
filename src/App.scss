@@ -6,8 +6,7 @@
 @import './components/components.scss';
 #personal_page{
     position:relative;
-    z-index:1;
-    background-color:$white;
+    height:100vh;
 }
 section{
     display:block;

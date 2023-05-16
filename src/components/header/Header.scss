@@ -1,4 +1,14 @@
 @import '../components.scss';
+.bannerAddtionalBg{
+    background:$black;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    height:100%;  
+    z-index:2;  
+}
 .header{
     @extend .d_flex;
     position:absolute;
@@ -23,7 +33,7 @@
                 text-transform: uppercase;
                 text-decoration: none;
                 span{
-                    color:$accent;
+                    color:$warning_color;
                     font-weight: 800;
                 }
             }

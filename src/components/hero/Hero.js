@@ -6,6 +6,7 @@ import { Link as SmoothScroll } from 'react-scroll';
 const Hero = () => {
   return (
     <section className="hero">
+    <div className="hero_bg"></div>
     <div className="bg"></div>
     <div className="relatve_container section_container">
         <div className="box"></div>
@@ -36,7 +37,7 @@ const Hero = () => {
                     <li><Link className="link" to="https://www.instagram.com/devamitjha/" target="_blank">Instagram</Link></li>
                     <li><Link className="link" to="https://www.facebook.com/devamitjha" target="_blank">Facebook</Link></li>
                     <li><Link className="link" to="https://in.linkedin.com/in/devamitjha" target="_blank">Linkedin</Link></li>
-                    <li><Link className="link" to="https://www.youtube.com/c/devamitjha" target="_blank">Youtube</Link></li>
+                    <li><Link className="link colored" to="https://www.youtube.com/c/devamitjha" target="_blank">Youtube</Link></li>
                 </ul>
             </div>  
         </div>
