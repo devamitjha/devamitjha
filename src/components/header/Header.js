@@ -1,9 +1,19 @@
-import React, { useLayoutEffect, useRef } from 'react';
+import React, { useLayoutEffect, useRef, useState } from 'react';
 import './Header.scss';
 import { Outlet, Link } from 'react-router-dom';
 import { gsap } from 'gsap';
+import Menu from '../menu/Menu';
+
+
 
 const Header = () => {
+    const [open, setOpen] = useState(false);
+    const openMenu = () => {
+        setOpen(true); 
+    };
+    const closeMenu = () => {
+        setOpen(false); 
+    };
     const personal_page = useRef();
     let timeLine = gsap.timeline();
   
@@ -60,12 +70,13 @@ const Header = () => {
 
   return (
     <div id="personal_page" ref={personal_page}>
+        <Menu active={open} onClick={closeMenu}/>
         <div className="bannerAddtionalBg"></div>
         <header className="header">
             <section className="section_container">
                 <div className="section_wrapper jcsb">
                     <Link className="logo" to="/">Dev<span>A</span>mit</Link>                
-                    <div className="menu right">
+                    <div className="menu right" onClick={()=>openMenu()}>
                         <span></span>
                         <span></span> 
                     </div>

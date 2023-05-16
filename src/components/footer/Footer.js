@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="dark">
         <div className="bg"></div>
         <div className="relatve_container section_wrapper">
-            <div className="copyright">© {currentYear} DA. All rights reserved.</div>
+            <div className="copyright">© {currentYear} DEVAMITJHA. All rights reserved.</div>
             <ul className="social">
                 <li><i className="fa fa-facebook"></i></li>
                 <li><i className="fa fa-linkedin"></i></li>
