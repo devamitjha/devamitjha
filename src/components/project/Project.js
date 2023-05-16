@@ -4,6 +4,26 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { Link } from 'react-router-dom';
+import {motion} from 'framer-motion';
+
+const container = {
+    show:{
+        transition:{
+            staggerChildren:0.2
+        }
+    }
+};
+const item = {
+    hidden:{opacity:0,y:20},
+    show:{
+        opacity:1,
+        y:0,
+        transition:{
+            ease:'easeInOut',
+            duration:.7
+        }
+    }
+}
 
 const Project = () => { 
     const sliderRef = useRef(null);
@@ -21,10 +41,10 @@ const Project = () => {
         slidesToScroll: 1
       };
   return (
-    <section className="project">
+    <motion.section className="project">
         <div className="bg"></div>
-        <div className="relatve_container section_wrapper">
-            <div className="section_left">
+        <motion.div className="relatve_container section_wrapper" variants={container} initial="hidden" exit="exit" whileInView="show" viewport={{once:false}}>
+            <motion.div className="section_left" variants={item}>
                 <div className="section_title">
                     <h3>MY PROJECT</h3>
                 </div>
@@ -40,8 +60,8 @@ const Project = () => {
                         <i className="fa fa-angle-right" aria-hidden="true"></i>
                     </div>
                 </div>
-            </div>
-            <div className="section_right">
+            </motion.div>
+            <motion.div className="section_right" variants={item}>
                 <div className="section_info">
                 <Slider ref={sliderRef} {...settings}>
                     <Link to="https://www.youtube.com/watch?v=46Ypo0wU-U8">
@@ -58,9 +78,9 @@ const Project = () => {
                     </Link>
                 </Slider>
                 </div>
-            </div>
-        </div>
-    </section>
+            </motion.div>
+        </motion.div>
+    </motion.section>
   )
 }
 
