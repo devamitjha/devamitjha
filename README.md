@@ -4,5 +4,5 @@ https://www.devamitjha.com
 # Youtube
 https://www.youtube.com/c/devamitjha
 
-# Github
-https://github.com/devamitjha
+# Linkedin
+https://in.linkedin.com/in/devamitjha
