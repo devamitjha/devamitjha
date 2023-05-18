@@ -37,7 +37,7 @@ const Header = () => {
                 amount: .2
             }
         })  
-        .from([".hero .heading_primary", ".hero .smoothScroll", ".hero .box"], {
+        .from([".hero .heading_primary", ".hero .smoothScroll", ".cta.primary", ".hero .box"], {
             delay: -0.8,
             x: -80,
             opacity: 0,

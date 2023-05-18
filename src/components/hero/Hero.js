@@ -26,6 +26,9 @@ const Hero = () => {
                         <h2 className="heading_primary">
                             <span>Crafting Digital Solutions Tailored to Your Vision</span>
                         </h2>
+                        <div className="cta primary">
+                            <Link to="https://api.whatsapp.com/send?phone=9967175225&text=Get in Touch for Freelancing Opportunities" target="_blank">Open for Freelancing <span>+</span></Link>
+                        </div>
                     </div>
                 </div>
                 <div className="bio left">

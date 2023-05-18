@@ -99,7 +99,10 @@
         position:relative;
         align-items: flex-start; 
         padding-left:16vw;
-        padding-top:18vw;  
+        padding-top:16vw; 
+        @media(max-width:1024px){
+            padding-top:20vw; 
+        } 
         @media(max-width:820px){
             padding:0;
         }       
@@ -130,7 +133,45 @@
                     margin-bottom:30px;
                     color:#FFFFFF99;
                 }
-              }
+                .cta{
+                    &.primary{ 
+                        position: relative; 
+                        text-align: right;
+                        a{
+                            cursor:pointer;
+                            display: inline-block;
+                            position: relative;
+                            padding: 18px;
+                            font-weight: 600;
+                            @extend .subtitle;
+                            text-transform: uppercase;  
+                            color: $white; 
+                            transition: all .5s ease;
+                            text-decoration: none;
+                            &:before{
+                                content: '';
+                                width: 50px;
+                                height: 50px;
+                                background: $primary_color;
+                                border-radius: 50%;
+                                top:0;
+                                left: 0;
+                                position: absolute;
+                                z-index: -1;
+                                transition: all .5s ease;
+                            }
+                            &:hover{
+                                color:$white;
+                                &:before {
+                                    left: 0;
+                                    width: 100%;
+                                    border-radius: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
           }
           .bio,
           .social{
