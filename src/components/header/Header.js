@@ -4,8 +4,6 @@ import { Outlet, Link } from 'react-router-dom';
 import { gsap } from 'gsap';
 import Menu from '../menu/Menu';
 
-
-
 const Header = () => {
     const [open, setOpen] = useState(false);
     const openMenu = () => {

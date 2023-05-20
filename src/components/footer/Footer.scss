@@ -31,3 +31,12 @@ footer{
         }
     }
 }
+@media(max-width:1024px){
+    .scrollbar-track{
+        &.scrollbar-track-y{
+            &.show{
+                display:none!important;
+            }
+        }
+    }
+}

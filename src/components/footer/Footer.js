@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.scss';
-import {motion} from 'framer-motion';
+import {motion, scrollY } from 'framer-motion';
+import Scroll from '../SmoothScroll';
 
 const currentYear = new Date().getFullYear();
 
@@ -25,6 +26,8 @@ const item = {
 
 const Footer = () => {
   return (
+    <>
+    <Scroll/>
     <motion.footer className="dark">
         <div className="bg"></div>
         <motion.div className="relatve_container section_wrapper" variants={container} initial="hidden" exit="exit" whileInView="show" viewport={{once:false}}>
@@ -37,6 +40,7 @@ const Footer = () => {
             </motion.ul>
         </motion.div>
     </motion.footer>
+  </>
   )
 }
 
