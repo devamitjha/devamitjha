@@ -3,7 +3,8 @@ import './Header.scss';
 import { Outlet, Link } from 'react-router-dom';
 import { gsap } from 'gsap';
 import Menu from '../menu/Menu';
-import AnimatedCursor from 'react-animated-cursor';
+
+
 
 const Header = () => {
     const [open, setOpen] = useState(false);
@@ -36,7 +37,7 @@ const Header = () => {
                 amount: .2
             }
         })  
-        .from([".hero .heading_primary", ".hero .smoothScroll", ".cta.primary", ".hero .box"], {
+        .from([".hero .heading_primary", ".hero .smoothScroll", ".hero .box"], {
             delay: -0.8,
             x: -80,
             opacity: 0,
@@ -69,20 +70,6 @@ const Header = () => {
 
   return (
     <div id="personal_page" ref={personal_page}>
-        <AnimatedCursor
-          innerSize={8}
-          outerSize={40}
-          innerScale={1}
-          outerScale={2}
-          outerAlpha={0}
-          hasBlendMode={true}
-          innerStyle={{
-            backgroundColor: '#fff'
-          }}
-          outerStyle={{
-            border: '2px solid #fff'
-          }}
-        />
         <Menu active={open} onClick={closeMenu}/>
         <div className="bannerAddtionalBg"></div>
         <header className="header">
