@@ -32,15 +32,15 @@ const Skill = () => {
                 </div>
                 <div className="section_info">
                     <ul>
-                        <li>HTML5</li>
-                        <li>Css3</li>
-                        <li>Javascript</li>
+                        <li>HTML5/CSS3</li>
+                        <li>Javascript/jQuery</li>
                         <li>React Js</li>
                         <li>Node/Express</li>
                         <li>Mongo DB</li>
                         <li>React Native</li>
                         <li>Magento 2+</li>
                         <li>Knockout Js</li>
+                        <li>GA/GTM</li>
                     </ul>
                 </div>
             </motion.div>

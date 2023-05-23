@@ -1,7 +1,8 @@
 import React from 'react';
 import './Footer.scss';
+import { Link } from 'react-router-dom';
 import {motion, scrollY } from 'framer-motion';
-import Scroll from '../SmoothScroll';
+//import Scroll from '../SmoothScroll';
 
 const currentYear = new Date().getFullYear();
 
@@ -27,16 +28,17 @@ const item = {
 const Footer = () => {
   return (
     <>
-    <Scroll/>
+    {/* <Scroll/> */}
     <motion.footer className="dark">
         <div className="bg"></div>
         <motion.div className="relatve_container section_wrapper" variants={container} initial="hidden" exit="exit" whileInView="show" viewport={{once:false}}>
             <motion.div className="copyright"  variants={item}>© {currentYear} DEVAMITJHA. All rights reserved.</motion.div>
             <motion.ul className="social">
-                <motion.li variants={item}><i className="fa fa-facebook"></i></motion.li>
-                <motion.li variants={item}><i className="fa fa-linkedin"></i></motion.li>
-                <motion.li variants={item}><i className="fa fa-instagram"></i></motion.li>
-                <motion.li variants={item}><i className="fa fa-youtube"></i></motion.li>
+                <motion.li variants={item}><Link to="https://www.youtube.com/c/devamitjha" target="_blank"><i className="fa fa-youtube"></i></Link></motion.li>
+                <motion.li variants={item}><Link to="https://github.com/devamitjha?tab=repositories" target="_blank"><i className="fa fa-github"></i></Link></motion.li>
+                <motion.li variants={item}><Link to="https://in.linkedin.com/in/devamitjha" target="_blank"><i className="fa fa-linkedin"></i></Link></motion.li>
+                <motion.li variants={item}><Link to="https://www.instagram.com/devamitjha/" target="_blank"><i className="fa fa-instagram"></i></Link></motion.li>
+                <motion.li variants={item}><Link to="https://www.facebook.com/devamitjha" target="_blank"><i className="fa fa-facebook"></i></Link></motion.li>
             </motion.ul>
         </motion.div>
     </motion.footer>
