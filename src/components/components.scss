@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600;700;800&family=Poppins:wght@400;600&display=swap');
 $dmSans:'DM Sans', sans-serif;
 $incon:'Inconsolata', monospace;
+$bitter: 'Bitter', serif;
+$popins: 'Poppins', sans-serif;
 $primary_color_bg:#132a60;
 $primary_color:#0032ff;
 $secondary_color:#527ceb;
@@ -10,6 +13,10 @@ $danger_color:#dc3545;
 $black:#000;
 $white:#fff;
 $accent:#b1b1b3;
+//v2
+$primary_color_bg_v2:#F4F9FC;
+$primary_color_v2:#0F1B61;
+$color_disabled:#919795;
 //common
 .d_flex{
     display:flex;
