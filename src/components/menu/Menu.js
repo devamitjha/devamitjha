@@ -19,7 +19,7 @@ const Menu = (props) => {
         <div className="navigation__items">
             <div className={props.active? 'navigation__container active' : 'navigation__container'}>
                 <div className="navigation__link">
-                    <Link to="/v2" className="active" data-number="1" onClick={onClick}>Homev2</Link>
+                    <Link to="/v2" className="active" data-number="1" onClick={onClick}>Home v2</Link>
                 </div>
                 <div className="navigation__link" onClick={onClick}>
                     <Link to="/" data-number="2">Blog</Link>
