@@ -1,10 +1,6 @@
 import React from 'react';
 import'./Main.scss';
-// import Work from '../work/Work';
-// import About from '../about/About';
-// import Portfolio from '../portfolio/Portfolio';
-// import Contact from '../contact/Contact';
-
+import TextAnimation from '../../../components/textAnimation/TextAnimation';
 const Main = () => {
   return (
    <div className='homepage_v2'>
@@ -26,9 +22,9 @@ const Main = () => {
         <div className='title_section'>
           <h1>
             <span>Hi, my</span>
-            <span>name is <strong>Amit</strong></span>
+            <span>name is<strong>Amit</strong></span>
           </h1>
-          <p>I’m an <span>independent creative developer</span> from<br/>Mumbai, India</p>
+          <p>I’m an <span>independent creative <TextAnimation/></span> from<br/>Mumbai, India</p>
         </div>
       </div>
     </div>
