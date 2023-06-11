@@ -511,10 +511,17 @@
                     <div class="letterbox"></div>
                 </amp-story-grid-layer>
             </amp-story-page>
-            <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-NXFQMB9&gtm.url=SOURCE_URL" data-credentials="include">
+            <amp-analytics type="gtag" data-credentials="include">
                 <script type="application/json">
                         {
-                            
+                            "vars": {
+                                "gtag_id": "GTM-NXFQMB9",
+                                "config": {
+                                    "GTM-NXFQMB9": {
+                                        "groups": "default"
+                                    }
+                                }
+                            },
                             "triggers": {
                                 "storyProgress": {
                                     "on": "story-page-visible",
@@ -522,7 +529,8 @@
                                         "event_name": "custom",
                                         "event_action": "story_progress",
                                         "event_category": "${title}",
-                                        "event_label": "${storyPageId}"
+                                        "event_label": "${storyPageId}",
+                                        "send_to": ["GTM-NXFQMB9"]
                                     }
                                 },
                                 "storyEnd": {
@@ -530,7 +538,8 @@
                                     "vars": {
                                         "event_name": "custom",
                                         "event_action": "story_complete",
-                                        "event_category": "${title}"
+                                        "event_category": "${title}",
+                                        "send_to": ["GTM-NXFQMB9"]
                                     }
                                 },
                                 "anchorClicks": {
@@ -541,7 +550,8 @@
                                         "event_name": "custom",
                                         "event_action": "cta_clicked",
                                         "event_category": "${title}",
-                                        "event_label": "${ctalink}"
+                                        "event_label": "${ctalink}",
+                                        "send_to": ["GTM-NXFQMB9"]
                                     }
                                 },
                                 "tooltipClickThrough": {
@@ -552,7 +562,8 @@
                                         "event_name": "custom",
                                         "event_action": "link_tooltip_clicked",
                                         "event_category": "${title}",
-                                        "event_label": "${ctalink}"
+                                        "event_label": "${ctalink}",
+                                        "send_to": ["GTM-NXFQMB9"]
                                     }
                                 },
                                 "tooltipClicks": {
@@ -562,7 +573,8 @@
                                         "event_name": "custom",
                                         "event_action": "link_tooltip_opened",
                                         "event_category": "${title}",
-                                        "event_label": "${ctalink}"
+                                        "event_label": "${ctalink}",
+                                        "send_to": ["GTM-NXFQMB9"]
                                     }
                                 }
                             }
