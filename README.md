@@ -1,5 +1,5 @@
 # Personal website
-https://www.devamitjha.com
+https://www.jhaamit.com
 
 # Youtube
 https://www.youtube.com/c/devamitjha
