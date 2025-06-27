@@ -90,7 +90,7 @@ const Header = () => {
         <header className="header">
             <section className="section_container">
                 <div className="section_wrapper jcsb">
-                    <Link className="logo" to="/">Dev<span>A</span>mit</Link>                
+                    <Link className="logo" to="/">Jha<span>A</span>mit</Link>                
                     <div className="menu right" onClick={()=>openMenu()}>
                         <span></span>
                         <span></span> 
